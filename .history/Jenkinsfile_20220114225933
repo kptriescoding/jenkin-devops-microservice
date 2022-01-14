@@ -4,15 +4,21 @@ pipeline {
 		stage('Build'){
 			step{
 				echo "Build"
-			}
-		}
-		stage('Test'){
-			step{
 				echo "Test"
+				echo "Integration Test"
 			}
 		}
-		stage('Integration Test'){
+		stage('Build'){
 			step{
+				echo "Build"
+				echo "Test"
+				echo "Integration Test"
+			}
+		}
+		stage('Build'){
+			step{
+				echo "Build"
+				echo "Test"
 				echo "Integration Test"
 			}
 		}
